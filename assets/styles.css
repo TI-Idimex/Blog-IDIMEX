@@ -2012,6 +2012,10 @@ h2 {
     font-size: 14px;
   }
 
+  .article-product-links {
+    grid-template-columns: 1fr;
+  }
+
   .blog-topic-card {
     min-height: auto;
   }
