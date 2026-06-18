@@ -1255,6 +1255,10 @@ h2 {
   max-width: 860px;
 }
 
+.article-shell.rich-article {
+  max-width: 900px;
+}
+
 .article-lead {
   color: var(--graphite);
   font-family: var(--serif);
@@ -1275,6 +1279,35 @@ h2 {
   font-size: clamp(17px, 1.3vw, 20px);
 }
 
+.article-shell a {
+  color: var(--wood-deep);
+  border-bottom: 1px solid rgba(91, 53, 31, 0.36);
+  transition: border-color 220ms ease, color 220ms ease;
+}
+
+.article-shell a:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.article-shell ul {
+  margin: 22px 0 30px;
+  padding-left: 22px;
+  color: rgba(33, 31, 27, 0.74);
+  font-size: clamp(17px, 1.3vw, 20px);
+}
+
+.article-shell li {
+  margin-bottom: 10px;
+}
+
+.article-shell h3 {
+  margin: 32px 0 10px;
+  color: var(--graphite);
+  font-size: clamp(20px, 2vw, 27px);
+  line-height: 1.18;
+}
+
 .article-shell blockquote {
   margin: 46px 0;
   padding: 34px 0 34px 34px;
@@ -1283,6 +1316,68 @@ h2 {
   font-family: var(--serif);
   font-size: clamp(28px, 3vw, 44px);
   line-height: 1.08;
+}
+
+.article-product-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 34px 0;
+}
+
+.article-product-card {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid rgba(10, 10, 8, 0.13);
+  background: #fffdf8;
+  box-shadow: 0 16px 42px rgba(10, 10, 8, 0.06);
+}
+
+.article-product-card span,
+.article-related-topics span {
+  color: var(--wood);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.article-product-card strong {
+  color: var(--graphite);
+  font-family: var(--serif);
+  font-size: clamp(23px, 2.5vw, 32px);
+  font-weight: 400;
+  line-height: 1.06;
+}
+
+.article-product-card em {
+  color: var(--wood-deep);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.article-related-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 38px 0 18px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(10, 10, 8, 0.12);
+}
+
+.article-related-topics span {
+  padding: 9px 11px;
+  border: 1px solid rgba(139, 93, 55, 0.28);
+  color: var(--wood-deep);
+}
+
+.article-faq {
+  margin-top: 52px;
+  padding-top: 6px;
 }
 
 .planning-section {
