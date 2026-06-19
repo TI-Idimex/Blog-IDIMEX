@@ -1825,6 +1825,19 @@ h2 {
 }
 
 @media (max-width: 980px) {
+  .site-header {
+    height: 72px;
+    padding-inline: 22px;
+    background: rgba(10, 10, 8, 0.96);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18px);
+  }
+
+  .logo-brand img {
+    width: 132px;
+    max-height: 44px;
+  }
+
   .nav-toggle {
     display: block;
     z-index: 112;
@@ -1832,31 +1845,46 @@ h2 {
 
   .primary-nav {
     position: fixed;
-    inset: 0;
-    z-index: 111;
-    display: grid;
-    align-content: center;
-    padding: 92px 28px 34px;
-    background: rgba(10, 10, 8, 0.98);
+    inset: 72px 0 auto 0;
+    z-index: 101;
+    display: block;
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    padding: 24px 28px 28px;
+    background: rgba(10, 10, 8, 0.97);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 280ms ease, transform 280ms ease;
+    transform: translateY(-10px);
+    visibility: hidden;
+    pointer-events: none;
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+    transition: opacity 240ms ease, transform 240ms ease, visibility 0s linear 240ms;
   }
 
   body.nav-open .primary-nav {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
   }
 
   .primary-nav > ul {
     display: grid;
-    gap: 22px;
+    gap: 18px;
+    width: min(100%, 360px);
+    margin-left: auto;
+    padding: 0;
+    text-align: right;
   }
 
   .primary-nav a {
-    font-size: 22px;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 20px;
     font-family: var(--serif);
     letter-spacing: 0;
+    line-height: 1.1;
   }
 
   .submenu {
