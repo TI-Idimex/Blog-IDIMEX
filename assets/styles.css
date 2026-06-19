@@ -825,7 +825,7 @@ h2 {
   color: #fff;
   background:
     linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.82)),
-    url("https://img.youtube.com/vi/o_7kr-7n0s4/maxresdefault.jpg") center / cover;
+    url("../assets/blog/optimized/idimex-escrivaninha-milano.jpg") center / cover;
 }
 
 .final-statement p {
@@ -1753,7 +1753,7 @@ h2 {
   color: #fff;
   background:
     linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)),
-    url("../assets/blog/como-escolher-moveis-madeira-macica.png") center / cover;
+    url("../assets/blog/optimized/como-escolher-moveis-madeira-macica.jpg") center / cover;
 }
 
 .newsletter-panel {
@@ -1798,8 +1798,8 @@ h2 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: none;
   transition: opacity 720ms ease, transform 720ms ease;
 }
 
