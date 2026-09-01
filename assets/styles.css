@@ -1280,6 +1280,19 @@ h2 {
   max-width: 900px;
 }
 
+.article-inline-banner {
+  margin: 0 0 clamp(34px, 6vw, 58px);
+  overflow: hidden;
+  border-radius: 2px;
+  background: #efe6d8;
+}
+
+.article-inline-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .article-lead {
   color: var(--graphite);
   font-family: var(--serif);
